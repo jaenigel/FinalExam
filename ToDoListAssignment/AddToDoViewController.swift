@@ -15,6 +15,7 @@ class AddToDoViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     
     @IBOutlet weak var importantSwitch: UISwitch!
+    @IBOutlet weak var notesTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -45,6 +46,7 @@ class AddToDoViewController: UIViewController {
             {
                 toDo.name = titleText
                 toDo.important = importantSwitch.isOn
+                toDo.notes = notesTextField.text
             }
             
             try? context.save()

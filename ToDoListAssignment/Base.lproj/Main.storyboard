@@ -66,20 +66,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQV-pp-4sk">
+                                <rect key="frame" x="186" y="229" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="tHd-Ie-ycH" firstAttribute="leading" secondItem="nIJ-KC-atA" secondAttribute="leading" constant="5" id="AIn-xK-wTq"/>
                             <constraint firstItem="tHd-Ie-ycH" firstAttribute="top" secondItem="nIJ-KC-atA" secondAttribute="top" constant="67" id="InL-sa-LVB"/>
+                            <constraint firstItem="xQV-pp-4sk" firstAttribute="top" secondItem="tHd-Ie-ycH" secondAttribute="bottom" constant="38" id="Qmh-VI-zfg"/>
                             <constraint firstItem="Dbu-xd-ucq" firstAttribute="top" secondItem="tHd-Ie-ycH" secondAttribute="bottom" constant="92" id="RVx-TF-d5Y"/>
                             <constraint firstItem="tHd-Ie-ycH" firstAttribute="centerX" secondItem="8QL-77-Ii8" secondAttribute="centerX" id="egx-lF-7Qa"/>
                             <constraint firstItem="Dbu-xd-ucq" firstAttribute="centerX" secondItem="8QL-77-Ii8" secondAttribute="centerX" id="fsm-Dq-Z8b"/>
+                            <constraint firstItem="xQV-pp-4sk" firstAttribute="centerX" secondItem="8QL-77-Ii8" secondAttribute="centerX" id="mgG-2C-ffe"/>
                             <constraint firstItem="nIJ-KC-atA" firstAttribute="trailing" secondItem="tHd-Ie-ycH" secondAttribute="trailing" constant="5" id="pf2-Kg-pWE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nIJ-KC-atA"/>
                     </view>
                     <navigationItem key="navigationItem" id="rnN-xZ-YJa"/>
                     <connections>
+                        <outlet property="notesLabel" destination="xQV-pp-4sk" id="Tub-YV-9QF"/>
                         <outlet property="titleLabel" destination="tHd-Ie-ycH" id="I1c-ZI-dlG"/>
                     </connections>
                 </viewController>
@@ -110,8 +119,8 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="710-Md-4Lx">
                                 <rect key="frame" x="182.5" y="353" width="51" height="31"/>
                             </switch>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ZO-Fo-VHA">
-                                <rect key="frame" x="192" y="480" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ZO-Fo-VHA">
+                                <rect key="frame" x="192" y="541" width="30" height="30"/>
                                 <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="addTapped:" destination="gCS-Uw-2Ir" eventType="touchUpInside" id="6Ph-9D-qjf"/>
@@ -122,18 +131,35 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cKc-g6-oMb">
+                                <rect key="frame" x="10" y="431" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntg-ch-6t2">
+                                <rect key="frame" x="181.5" y="402" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Zzx-FY-Rdy" firstAttribute="top" secondItem="qo8-rZ-ZqJ" secondAttribute="top" constant="72" id="0iZ-4J-aEF"/>
+                            <constraint firstItem="cKc-g6-oMb" firstAttribute="leading" secondItem="qo8-rZ-ZqJ" secondAttribute="leading" constant="10" id="15B-Zy-vfw"/>
                             <constraint firstItem="qo8-rZ-ZqJ" firstAttribute="trailing" secondItem="akH-cU-l4n" secondAttribute="trailing" constant="30" id="2RA-Zy-Wkj"/>
                             <constraint firstItem="Zzx-FY-Rdy" firstAttribute="top" secondItem="qo8-rZ-ZqJ" secondAttribute="top" constant="72" id="6tc-3r-RIs"/>
                             <constraint firstItem="4ZO-Fo-VHA" firstAttribute="top" secondItem="710-Md-4Lx" secondAttribute="bottom" constant="96" id="7MJ-34-g6u"/>
                             <constraint firstItem="u5R-TF-Uej" firstAttribute="centerX" secondItem="dOt-Id-Mb9" secondAttribute="centerX" id="8kS-cR-tO2"/>
+                            <constraint firstItem="Ntg-ch-6t2" firstAttribute="top" secondItem="710-Md-4Lx" secondAttribute="bottom" constant="18" id="9Ct-Vm-sCS"/>
+                            <constraint firstItem="Ntg-ch-6t2" firstAttribute="centerX" secondItem="dOt-Id-Mb9" secondAttribute="centerX" id="9P1-xt-caA"/>
                             <constraint firstItem="Zzx-FY-Rdy" firstAttribute="centerX" secondItem="dOt-Id-Mb9" secondAttribute="centerX" id="CVs-la-L1H"/>
+                            <constraint firstItem="cKc-g6-oMb" firstAttribute="top" secondItem="Ntg-ch-6t2" secondAttribute="bottom" constant="8" id="JNe-wj-NsI"/>
+                            <constraint firstItem="cKc-g6-oMb" firstAttribute="centerX" secondItem="dOt-Id-Mb9" secondAttribute="centerX" id="Lhw-nF-KuR"/>
                             <constraint firstItem="710-Md-4Lx" firstAttribute="top" secondItem="u5R-TF-Uej" secondAttribute="bottom" constant="21" id="REh-Jk-7xB"/>
                             <constraint firstItem="710-Md-4Lx" firstAttribute="centerX" secondItem="dOt-Id-Mb9" secondAttribute="centerX" id="Trf-8w-9BA"/>
                             <constraint firstItem="u5R-TF-Uej" firstAttribute="top" secondItem="akH-cU-l4n" secondAttribute="bottom" constant="53" id="bcQ-ZO-qRA"/>
+                            <constraint firstItem="qo8-rZ-ZqJ" firstAttribute="trailing" secondItem="cKc-g6-oMb" secondAttribute="trailing" constant="10" id="c9j-fg-7AI"/>
                             <constraint firstItem="akH-cU-l4n" firstAttribute="centerX" secondItem="dOt-Id-Mb9" secondAttribute="centerX" id="k5o-iS-8jc"/>
                             <constraint firstItem="4ZO-Fo-VHA" firstAttribute="centerX" secondItem="dOt-Id-Mb9" secondAttribute="centerX" id="n9c-Vh-zsF"/>
                             <constraint firstItem="4ZO-Fo-VHA" firstAttribute="centerX" secondItem="dOt-Id-Mb9" secondAttribute="centerX" id="ntg-wJ-at6"/>
@@ -146,6 +172,7 @@
                     <navigationItem key="navigationItem" id="6Kn-1v-sX2"/>
                     <connections>
                         <outlet property="importantSwitch" destination="710-Md-4Lx" id="qEg-1M-mF6"/>
+                        <outlet property="notesTextField" destination="cKc-g6-oMb" id="6qC-mg-TPL"/>
                         <outlet property="titleTextField" destination="akH-cU-l4n" id="GNV-6D-FYW"/>
                     </connections>
                 </viewController>
