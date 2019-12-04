@@ -3,6 +3,8 @@
 //  ToDoListAssignment
 //
 //  Created by Jae Nigel Miranda on 2019-12-04.
+//  Student ID: 301106338
+//  Description: Table View of list of to dos
 //  Copyright © 2019 Jae Nigel Miranda. All rights reserved.
 //
 
@@ -22,7 +24,7 @@ class ToDoTableViewController: UITableViewController {
         getToDos()
     }
     
-    func getToDos()
+    func getToDos()//Fetches from data core
     {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
         {
@@ -34,21 +36,6 @@ class ToDoTableViewController: UITableViewController {
                 tableView.reloadData()
             }
         }
-    }
-    
-    func createToDos() -> [ToDo]
-    {
-        let eggs = ToDo()
-        eggs.name = "Buy Eggs"
-        eggs.important = true
-        
-        let dog = ToDo()
-        dog.name = "Walk the dog"
-        
-        let cheese = ToDo()
-        cheese.name = "Eat cheese"
-        
-        return [eggs, dog, cheese]
     }
     
     

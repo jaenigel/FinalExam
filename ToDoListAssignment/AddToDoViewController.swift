@@ -3,6 +3,8 @@
 //  ToDoListAssignment
 //
 //  Created by Jae Nigel Miranda on 2019-12-04.
+//  Student ID: 301106338
+//  Description: View Controller of the AddToDos
 //  Copyright © 2019 Jae Nigel Miranda. All rights reserved.
 //
 
@@ -21,21 +23,7 @@ class AddToDoViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    @IBAction func addTapped(_ sender: Any) {
-        /*
-        let toDo = ToDo()
-        
-        if let titleText = titleTextField.text
-        {
-            toDo.name = titleText
-                   toDo.important = importantSwitch.isOn
-                   
-                   previousVC.toDos.append(toDo)
-                   previousVC.tableView.reloadData()
-                   
-                   navigationController?.popViewController(animated: true)
-        }
-       */
+    @IBAction func addTapped(_ sender: Any) { //Saves new To Do
         
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
         {
