@@ -3,6 +3,8 @@
 //  ToDoListAssignment
 //
 //  Created by Jae Nigel Miranda on 2019-12-04.
+//  Student ID: 301106338
+//  Description: View Controller of the Complete To Do
 //  Copyright © 2019 Jae Nigel Miranda. All rights reserved.
 //
 
@@ -22,7 +24,7 @@ class CompleteViewController: UIViewController {
         notesLabel.text = selectedToDo?.notes
     }   
 
-    @IBAction func completeTapped(_ sender: Any) {
+    @IBAction func completeTapped(_ sender: Any) { //Deletes from Core Data
         
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
         {
