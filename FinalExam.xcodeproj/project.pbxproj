@@ -13,15 +13,16 @@
 		D61535B823982FA6003D480B /* ToDoListAssignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D61535B623982FA6003D480B /* ToDoListAssignment.xcdatamodeld */; };
 		D61535BA23982FA7003D480B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D61535B923982FA7003D480B /* Assets.xcassets */; };
 		D61535BD23982FA7003D480B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61535BB23982FA7003D480B /* LaunchScreen.storyboard */; };
-		D61535C523983358003D480B /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61535C423983358003D480B /* ToDoTableViewController.swift */; };
-		D61535C723983465003D480B /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61535C623983465003D480B /* ToDo.swift */; };
-		D61535C923983BDC003D480B /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61535C823983BDC003D480B /* AddToDoViewController.swift */; };
+		D61535C523983358003D480B /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61535C423983358003D480B /* PersonalViewController.swift */; };
+		D61535C723983465003D480B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61535C623983465003D480B /* Person.swift */; };
+		D61535C923983BDC003D480B /* AddRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61535C823983BDC003D480B /* AddRecordViewController.swift */; };
 		D61535CB23984AD6003D480B /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61535CA23984AD6003D480B /* CompleteViewController.swift */; };
+		D652A8B823A1BC350048F031 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = D652A8B723A1BC350048F031 /* Record.swift */; };
 		D6F4CF54239885FA000670FE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D6F4CF53239885FA000670FE /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D61535AA23982FA6003D480B /* ToDoListAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61535AA23982FA6003D480B /* FinalExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61535AD23982FA6003D480B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D61535AF23982FA6003D480B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D61535B423982FA6003D480B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,10 +30,11 @@
 		D61535B923982FA7003D480B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D61535BC23982FA7003D480B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D61535BE23982FA7003D480B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D61535C423983358003D480B /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
-		D61535C623983465003D480B /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
-		D61535C823983BDC003D480B /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
+		D61535C423983358003D480B /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
+		D61535C623983465003D480B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		D61535C823983BDC003D480B /* AddRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordViewController.swift; sourceTree = "<group>"; };
 		D61535CA23984AD6003D480B /* CompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
+		D652A8B723A1BC350048F031 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		D6F4CF52239880BC000670FE /* splash2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash2.png; path = /Users/jaemiranda/Documents/ToDoListAssignment/ToDoListAssignment/splash2.png; sourceTree = "<absolute>"; };
 		D6F4CF53239885FA000670FE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,7 +53,7 @@
 		D61535A123982FA6003D480B = {
 			isa = PBXGroup;
 			children = (
-				D61535AC23982FA6003D480B /* ToDoListAssignment */,
+				D61535AC23982FA6003D480B /* FinalExam */,
 				D61535AB23982FA6003D480B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,19 +61,20 @@
 		D61535AB23982FA6003D480B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D61535AA23982FA6003D480B /* ToDoListAssignment.app */,
+				D61535AA23982FA6003D480B /* FinalExam.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D61535AC23982FA6003D480B /* ToDoListAssignment */ = {
+		D61535AC23982FA6003D480B /* FinalExam */ = {
 			isa = PBXGroup;
 			children = (
 				D61535AD23982FA6003D480B /* AppDelegate.swift */,
 				D61535AF23982FA6003D480B /* SceneDelegate.swift */,
-				D61535C623983465003D480B /* ToDo.swift */,
-				D61535C423983358003D480B /* ToDoTableViewController.swift */,
-				D61535C823983BDC003D480B /* AddToDoViewController.swift */,
+				D652A8B723A1BC350048F031 /* Record.swift */,
+				D61535C623983465003D480B /* Person.swift */,
+				D61535C423983358003D480B /* PersonalViewController.swift */,
+				D61535C823983BDC003D480B /* AddRecordViewController.swift */,
 				D61535CA23984AD6003D480B /* CompleteViewController.swift */,
 				D61535B323982FA6003D480B /* Main.storyboard */,
 				D61535B923982FA7003D480B /* Assets.xcassets */,
@@ -81,15 +84,15 @@
 				D61535BE23982FA7003D480B /* Info.plist */,
 				D61535B623982FA6003D480B /* ToDoListAssignment.xcdatamodeld */,
 			);
-			path = ToDoListAssignment;
+			path = FinalExam;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D61535A923982FA6003D480B /* ToDoListAssignment */ = {
+		D61535A923982FA6003D480B /* FinalExam */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D61535C123982FA7003D480B /* Build configuration list for PBXNativeTarget "ToDoListAssignment" */;
+			buildConfigurationList = D61535C123982FA7003D480B /* Build configuration list for PBXNativeTarget "FinalExam" */;
 			buildPhases = (
 				D61535A623982FA6003D480B /* Sources */,
 				D61535A723982FA6003D480B /* Frameworks */,
@@ -99,9 +102,9 @@
 			);
 			dependencies = (
 			);
-			name = ToDoListAssignment;
+			name = FinalExam;
 			productName = ToDoListAssignment;
-			productReference = D61535AA23982FA6003D480B /* ToDoListAssignment.app */;
+			productReference = D61535AA23982FA6003D480B /* FinalExam.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D61535A523982FA6003D480B /* Build configuration list for PBXProject "ToDoListAssignment" */;
+			buildConfigurationList = D61535A523982FA6003D480B /* Build configuration list for PBXProject "FinalExam" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -132,7 +135,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D61535A923982FA6003D480B /* ToDoListAssignment */,
+				D61535A923982FA6003D480B /* FinalExam */,
 			);
 		};
 /* End PBXProject section */
@@ -157,11 +160,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D61535AE23982FA6003D480B /* AppDelegate.swift in Sources */,
-				D61535C723983465003D480B /* ToDo.swift in Sources */,
-				D61535C523983358003D480B /* ToDoTableViewController.swift in Sources */,
+				D61535C723983465003D480B /* Person.swift in Sources */,
+				D61535C523983358003D480B /* PersonalViewController.swift in Sources */,
 				D61535B823982FA6003D480B /* ToDoListAssignment.xcdatamodeld in Sources */,
 				D61535CB23984AD6003D480B /* CompleteViewController.swift in Sources */,
-				D61535C923983BDC003D480B /* AddToDoViewController.swift in Sources */,
+				D61535C923983BDC003D480B /* AddRecordViewController.swift in Sources */,
+				D652A8B823A1BC350048F031 /* Record.swift in Sources */,
 				D61535B023982FA6003D480B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +317,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jaemiranda.ToDoListAssignment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaemiranda.FinalExam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,7 +335,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jaemiranda.ToDoListAssignment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaemiranda.FinalExam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,7 +345,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D61535A523982FA6003D480B /* Build configuration list for PBXProject "ToDoListAssignment" */ = {
+		D61535A523982FA6003D480B /* Build configuration list for PBXProject "FinalExam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D61535BF23982FA7003D480B /* Debug */,
@@ -350,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D61535C123982FA7003D480B /* Build configuration list for PBXNativeTarget "ToDoListAssignment" */ = {
+		D61535C123982FA7003D480B /* Build configuration list for PBXNativeTarget "FinalExam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D61535C223982FA7003D480B /* Debug */,

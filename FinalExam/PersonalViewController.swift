@@ -10,9 +10,9 @@
 
 import UIKit
 
-class ToDoTableViewController: UITableViewController {
+class PersonalViewController: UITableViewController {
     
-    var toDos : [ToDoCore] = []
+    var records : [RecordsCore] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,18 +21,17 @@ class ToDoTableViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        getToDos()
+        getRecords()
     }
     
-    func getToDos()//Fetches from data core
+    func getRecords()//Fetches from data core
     {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
         {
-            if let coreDataToDos = try? context.fetch(ToDoCore.fetchRequest()) as? [ToDoCore]
+            if let coreDatarecords = try? context.fetch(RecordsCore.fetchRequest()) as? [RecordsCore]
             {
-                //let theToDos = coreDataToDos
-                //print(coreDataToDos.first?.name!)
-                toDos = coreDataToDos
+               
+                records = coreDatarecords
                 tableView.reloadData()
             }
         }
@@ -41,35 +40,26 @@ class ToDoTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return toDos.count
+        return records.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         
-        let toDo = toDos[indexPath.row]
+        let record = records[indexPath.row]
         
-        if let name = toDo.name{
-            
-            if toDo.important
-            {
-                cell.textLabel?.text = "‼️" + name
-            }
-            else
-            {
-                cell.textLabel?.text = toDo.name
-            }
-            
-        }
+        cell.textLabel?.text = "BMI: " +  String(record.bmi) + "   Weight: " + String(record.weight) + "   Date: " + record.date!
+        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let toDo = toDos[indexPath.row]
+        let toDo = records[indexPath.row]
         performSegue(withIdentifier: "moveToComplete", sender: toDo)
     }
-    
+    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let addVC = segue.destination as? AddToDoViewController
         {
@@ -78,12 +68,12 @@ class ToDoTableViewController: UITableViewController {
         
         if let completeVC = segue.destination as? CompleteViewController
         {
-            if let toDo = sender as? ToDoCore            {
+            if let toDo = sender as? RecordsCore            {
                 completeVC.selectedToDo = toDo
                 completeVC.previousVC = self
             }
             
         }
-    }
+    }*/
     
 }

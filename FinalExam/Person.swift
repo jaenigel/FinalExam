@@ -13,8 +13,12 @@
 import Foundation
 import UIKit
 
-class ToDo
+class Person
 {
     var name = ""
-    var important = false
+    var age = ""
+    var gender = ""
+    var weight = 0
+    var height = 0
+    
 }
