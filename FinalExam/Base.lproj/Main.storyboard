@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--To Do List-->
+        <!--BMI Track-->
         <scene sceneID="s9a-Z1-iWb">
             <objects>
-                <tableViewController id="fYK-V3-bdq" customClass="PersonalViewController" customModule="ToDoListAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="fYK-V3-bdq" customClass="PersonalViewController" customModule="FinalExam" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="idF-PV-Fyb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,10 +31,10 @@
                             <outlet property="delegate" destination="fYK-V3-bdq" id="wrh-He-72l"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="To Do List" id="Ig1-Cq-Ene">
+                    <navigationItem key="navigationItem" title="BMI Track" id="Ig1-Cq-Ene">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="y40-Od-Cbq">
                             <connections>
-                                <segue destination="0MK-s0-LnU" kind="show" id="cZh-Pp-AXJ"/>
+                                <segue destination="0MK-s0-LnU" kind="show" id="Ilq-MP-eKi"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -46,7 +46,7 @@
         <!--Add Record View Controller-->
         <scene sceneID="PdV-l2-6Cq">
             <objects>
-                <viewController id="0MK-s0-LnU" customClass="AddRecordViewController" customModule="ToDoListAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0MK-s0-LnU" customClass="AddRecordViewController" customModule="FinalExam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8QL-77-Ii8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,8 +64,7 @@
                                     <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="completeTapped:" destination="0MK-s0-LnU" eventType="touchUpInside" id="Bb3-Ti-0GK"/>
-                                    <action selector="updateTapped:" destination="0MK-s0-LnU" eventType="touchUpInside" id="vfa-dq-Qf2"/>
+                                    <action selector="updatedTapped:" destination="0MK-s0-LnU" eventType="touchUpInside" id="lIV-Ta-Mt0"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sXx-rt-lAR">
@@ -98,8 +97,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="rnN-xZ-YJa"/>
                     <connections>
-                        <outlet property="titleLabel" destination="tHd-Ie-ycH" id="I1c-ZI-dlG"/>
-                        <outlet property="updateTapped" destination="Dbu-xd-ucq" id="U95-Nr-UuK"/>
+                        <outlet property="weightTextField" destination="sXx-rt-lAR" id="Y3N-bS-hNS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndZ-zR-Kh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -109,7 +107,7 @@
         <!--Complete View Controller-->
         <scene sceneID="65g-Qo-jEj">
             <objects>
-                <viewController id="gCS-Uw-2Ir" customClass="CompleteViewController" customModule="ToDoListAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gCS-Uw-2Ir" customClass="CompleteViewController" customModule="FinalExam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dOt-Id-Mb9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

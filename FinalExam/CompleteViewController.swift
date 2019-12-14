@@ -46,7 +46,7 @@ class CompleteViewController: UIViewController {
                 
                 persons = coreDataPerson
                 
-                if(persons[0].name != nil)
+                if(!(persons.isEmpty))
                 {
                 nameTextField.text = persons[0].name
                 ageTextField.text = String(persons[0].age)
@@ -54,6 +54,7 @@ class CompleteViewController: UIViewController {
                 weightTextField.text = String(persons[0].weight)
                 heightTextField.text = String(persons[0].height)
                 }
+                
             }
         }
     }
